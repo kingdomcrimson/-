@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int arr[10]={0};
+int i=0;
+while(i<10)
+{
+	scanf("%d",&arr[i]);
+	i++;
+}
+int sum =0;
+for(int i=0;i<10;i++)
+{
+	sum+=arr[i];
+}
+float aver=sum/10.00;
+printf("%.2f",aver);
+	return 0;
+}
