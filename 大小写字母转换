@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	char k_='a';
+	scanf("%c",&k_);
+	int boy =k_;
+	int hg=boy+32;
+	k_=(char)(hg);
+	printf("%c\n",k_);
+	return 0;
+}
