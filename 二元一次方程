@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d,p,q,e,f;
+	scanf("%d%d%d",&a,&b,&c);
+	d=b*b-4*a*c;
+	printf("%d\n",d);
+  switch(a)
+  {
+  case 0:
+  printf("不是二次方程\n");
+     break;
+  default:
+  	{
+  		if(d>0)
+  		{
+  		e=(-b+sqrt(d))/(2*a);
+  		f=(-b-sqrt(d))/(2*a);
+		  printf("e=%d\n",e);
+		  printf("f=%d\n",f);
+		  }
+  		else if(d==0)
+  		{
+  			e=(-b)/(2*a);
+  			printf("e=f=%d",e);
+  	}
+  	else if(d<0)
+    	{
+  		p=(-b)/2*a;
+  		q=sqrt(abs(d));
+  		printf("%d+%di\n",p,q);
+  		printf("%d-%di",p,q);
+	  }
+	  }
+}
+
+ return 0;
+}
